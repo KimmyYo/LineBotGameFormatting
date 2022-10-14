@@ -21,8 +21,8 @@ ALLOWED_HOSTS = [
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi("l4GzMk3RIisdAAXMMyjjrvWsPGaRKoEpdPBErn+WRuZU8/zbrYZ1S28kQ1nT8oJF1xe/fGx2VJKqkST2I/HmXY4pkUM3Sw/XA1yagA5OoTD1hKsGI49fKJHlfoUKQPzCU3Uetoys77o4TOslWCzRVAdB04t89/1O/w1cDnyilFU=")
-handler = WebhookHandler("0fda690fbc816d8ff1ea4df18d2f877a")
+line_bot_api = LineBotApi(LINE_BOT_AUTH_TOKEN)
+handler = WebhookHandler(LINE_BOT_SECRET)
 
 
 @app.route("/", methods=['POST'])
