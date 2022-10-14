@@ -2,7 +2,7 @@ name: format-score
 
 on:
   schedule: 
-    - cron: '* * * * * *'
+    - cron: '* * * * *'
     
 jobs:
   build:
